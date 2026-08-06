@@ -14,7 +14,7 @@ class Employee:
     company = "Apple"
 
     # Constructor
-    def __init__(self, emp_name, emp_dept):
+    def __init__(self, emp_name, emp_dept:str):
         self.emp_name = emp_name
         self.emp_dept = emp_dept
 
@@ -35,7 +35,7 @@ class Employee:
 # Creating Objects
 # ============================================
 
-obj = Employee("Suryansh", "Data")
+obj = Employee("Suryansh", "Data Engineering")
 obj.info()
 
 obj2 = Employee("Naman", "Marketing")

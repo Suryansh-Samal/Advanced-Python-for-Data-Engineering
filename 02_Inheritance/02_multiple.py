@@ -16,7 +16,7 @@ class Department:
 
 class Employee(Company, Department):
 
-    def __init__(self,employee_name, department_name, company_name):
+    def __init__(self,employee_name:str, department_name:str, company_name:str):
        self.employee_name = employee_name
        Department.__init__(self, department_name)
        Company.__init__(self, company_name)

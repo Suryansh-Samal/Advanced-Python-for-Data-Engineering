@@ -1,17 +1,44 @@
+"""
+Topic: Classes and Objects
+Description: Demonstrates creating a class, defining methods,
+and creating multiple objects.
+Author: Suryansh
+"""
+
+# ============================================
+# Class Definition
+# ============================================
+
 class Person:
+    """Represents a person."""
 
-  var1 = "Suryansh"
-  var2= 'Ayush'
+    # Class Variables
+    first_person = "Suryansh"
+    second_person = "Ayush"
 
-  def info(self):
-    print(f'This is {self.var1}')
-    print(f'This is {self.var2}')
+    # Instance Method
+    def display_info(self):
+        """Displays the names stored in the class."""
 
-  def greet(self):
-    print(f'Hello {self.var1}! How are you?') 
-    print(f'Hello {self.var2}! How are you?') 
-obj = Person()
-obj.info()
-obj2 = Person()
-obj2.greet()
-    
+        print(f"This is {self.first_person}")
+        print(f"This is {self.second_person}")
+
+    # Instance Method
+    def greet(self):
+        """Greets both people."""
+
+        print(f"Hello {self.first_person}! How are you?")
+        print(f"Hello {self.second_person}! How are you?")
+
+
+# ============================================
+# Creating Objects
+# ============================================
+
+person1 = Person()
+person1.display_info()
+
+print()
+
+person2 = Person()
+person2.greet()

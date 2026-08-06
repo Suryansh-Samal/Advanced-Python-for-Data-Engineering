@@ -7,15 +7,17 @@ def fetch_data(url:str):
     print(f"Data fetched from {url}")
     return f"Data from {url}"
 
-urls = [
+url = [
     "https://api.example.com/data1",
     "https://api.example.com/data2",
     "https://api.example.com/data3",
     "https://api.example.com/data4",
     "https://api.example.com/data5",
 ]
+results = []
+with ThreadPoolExecutor(max_workers=len(url)) as executor:
+    futures = executor.map(fetch_data, url)
+    results.extend(futures)
 
-with ThreadPoolExecutor(max_workers=len(urls)) as executor:
-    for url in urls:
-        executor.submit(fetch_data, url)
+print(results)
 
