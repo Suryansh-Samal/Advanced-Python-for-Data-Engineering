@@ -1,1 +1,5 @@
 pandas
+numpy
+pytest
+pytest-mock
+requests
