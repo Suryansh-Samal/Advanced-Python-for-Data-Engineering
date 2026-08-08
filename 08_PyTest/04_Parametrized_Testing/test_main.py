@@ -11,6 +11,3 @@ import pytest
 #Test cases for weather_check function:
 def test_weather_check(temp , expected):
     assert weather_check(temp) == expected
-
-if __name__ == '__main__':
-    test_weather_check()

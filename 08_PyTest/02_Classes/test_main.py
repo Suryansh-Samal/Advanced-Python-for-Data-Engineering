@@ -15,3 +15,5 @@ def test_rain_check():
 
 test_weather_check()
 test_rain_check()
+
+#To run the test you need to write pytest + relative path in the terminal then hit enter 

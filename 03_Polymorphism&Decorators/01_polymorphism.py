@@ -14,6 +14,6 @@ class s3_fetch:
         print("Fetching data from S3")
 
 obj = api_fetch()
-obj.fetch() 
+obj.fetch()  
 
 #Polymorphism: Same method name but different implementation

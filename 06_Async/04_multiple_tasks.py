@@ -15,13 +15,13 @@ async def execution():
 
 #third task
 async def transformation():
-    asyncio.sleep(2)  # Simulate a non-blocking operation that takes 2 seconds
+    asyncio.sleep(4)  # Simulate a non-blocking operation that takes 4 seconds
     print("Data transformation completed")
 
 
 async def main():
     await asyncio.gather(
-    api_call("https://api.example.com/data1", 2),
+    api_call("https://api.example.com/data1", 3),
     execution(),
     transformation()
 )
