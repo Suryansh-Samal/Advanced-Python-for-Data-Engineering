@@ -3,7 +3,7 @@ import os
 print('path:' ,os.getcwd()) #get working directory
 print('full_path:', os.path.abspath(__file__)) #get absoulute path
 print('Directory:', os.path.dirname (os.path.abspath(__file__))) #get the directory name of the current file
-# print(os.listdir()) #list of all the files in the directory
+print(os.listdir()) #list of all the files in the directory
 
 for i in os.listdir():
     if os.path.isfile(i):
